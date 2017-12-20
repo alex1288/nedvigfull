@@ -1544,7 +1544,7 @@ button.but_order:hover {
   top: 30%;
   left: 0;
   //width: 100%;
-  background: rgba(255, 255, 255, .8);
+  //background: rgba(255, 255, 255, .8);
   z-index: 1000;
   
   border-radius: 10px;
@@ -1595,6 +1595,7 @@ margin-bottom: 0;
     -webkit-transition: .5s;
   -moz-transition: .5s;
   transition: .5s;
+  color: #949393;
 
   }
 
