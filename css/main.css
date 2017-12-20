@@ -739,7 +739,7 @@ position: relative;
 .what_we_can_l h2 {
   position: relative;
   z-index: 1;
-  font-size: 47px;
+  font-size: 40px;
 }
 .what_we_can_l h2:after{content:" ";
 background-color:#ec9d2d;
@@ -1536,6 +1536,96 @@ button.but_order:hover {
 }
 
 /*всплывающая форма обратной связи end*/
+
+
+/*Навигация на главной*/
+  .sticky-header {
+  position: fixed;
+  top: 30%;
+  left: 0;
+  //width: 100%;
+  background: rgba(255, 255, 255, .8);
+  z-index: 1000;
+  
+  border-radius: 10px;
+  
+}
+.top-menu ul {
+  margin: 0px 0;
+  text-align: center;
+  width: 30px;
+
+
+
+}
+.top-menu ul li {
+  list-style: none;
+  display: block;
+  margin: 0 15px;
+  text-align: left;
+  margin: 0px 7px;
+   -webkit-transition: .5s;
+  -moz-transition: .5s;
+  transition: .5s;
+}
+.top-menu ul li a:before{
+  content: "";
+      width: 14px;
+    height: 14px;
+  margin: 0px 3px;
+    background: #D6D6D6;
+    display: inline-block;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    border-radius: 30px;
+        -webkit-transition: .5s;
+  -moz-transition: .5s;
+  transition: .5s;
+    }
+.top-menu a {
+
+  color: #fff;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  transition: .5s;
+}
+.top-menu a p{
+  display: none;
+margin-bottom: 0;
+    -webkit-transition: .5s;
+  -moz-transition: .5s;
+  transition: .5s;
+
+  }
+
+  .top-menu ul:hover p{
+display: inline-block;
+
+  }
+  .top-menu ul:hover{
+width: auto;
+
+}
+.top-menu a:hover p{
+  color: black
+}
+
+.top-menu a.active:before{
+  content: "";
+
+    background: #869791;
+
+    }
+    .top-menu a:hover:before{
+  content: "";
+
+    background: #869791;
+
+    }
+/*Навигация на главной*/
+
+
+
 
 
 @media only screen and (max-width:1200px){

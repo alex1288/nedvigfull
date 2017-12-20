@@ -36,6 +36,21 @@ $(document).ready(function() {
 /*	var austDay = new Date($(".countdown").attr("date-time"));
 	$(".countdown").countdown({until: austDay, format: 'yowdHMS'});*/
 
+
+jQuery(function(f){
+
+    var element = f('#blfix');
+
+    f(window).scroll(function(){
+        element['fade'+ (f(this).scrollTop() > 500 ? 'In': 'Out')](500);          
+
+    });
+
+});
+
+
+
+
 	//Попап менеджер FancyBox
 	//Документация: http://fancybox.net/howto
 	//<a class="fancybox"><img src="image.jpg" /></a>
@@ -249,7 +264,43 @@ $(document).ready(function() {
 
 
 
-
+	$(document).ready(function () {
+		$(document).on("scroll", onScroll);
+ 
+		$('a[href^="#"]').on('click', function (e) {
+			e.preventDefault();
+			$(document).off("scroll");
+ 
+			$('a').each(function () {
+				$(this).removeClass('active');
+			})
+			$(this).addClass('active');
+ 
+			var target = this.hash;
+			$target = $(target);
+			$('html, body').stop().animate({
+				'scrollTop': $target.offset().top+2
+			}, 500, 'swing', function () {
+				window.location.hash = target;
+				$(document).on("scroll", onScroll);
+			});
+		});
+	});
+ 
+	function onScroll(event){
+		var scrollPosition = $(document).scrollTop();
+		$('nav a').each(function () {
+			var currentLink = $(this);
+			var refElement = $(currentLink.attr("href"));
+			if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
+				$('nav ul li a').removeClass("active");
+				currentLink.addClass("active");
+			}
+			else{
+				currentLink.removeClass("active");
+			}
+		});
+	}
 
 
 
