@@ -170,6 +170,34 @@ $(document).ready(function() {
 		dots: true,
 		nav: true,
 		navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+		navContainer: '#customNav',
+		responsive: {
+	    // > 0
+	    0 : {
+	      dots: true,
+	      margin:30,
+	      stagePadding: 30,
+	    },
+	    // > 768
+	    768 : {
+	    	margin:100,
+	    	stagePadding: 100,
+        dots: true,
+	    }
+		}
+	});
+
+	$(".owl-carousel2").owlCarousel({
+		loop:true,
+		items: 3,
+		//margin:130,
+		//autoplay:true,
+	    autoplayTimeout:6000,
+	    autoplayHoverPause:true,
+		//stagePadding: 30,
+		dots: true,
+		nav: true,
+		navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
 		navContainer: '#customNav2',
 		responsive: {
 	    // > 0
@@ -186,6 +214,7 @@ $(document).ready(function() {
 	    }
 		}
 	});
+
 	$("#slider").owlCarousel({
         items: 1,
         loop: true,
