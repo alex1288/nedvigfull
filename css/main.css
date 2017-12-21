@@ -287,16 +287,125 @@ color: #fff;
   font-size: 21px;
 }
 
+
+                                      /*100 слов о нас*/
+
+.about_us {
+  position: relative;
+  background: #f6f6f6;
+ background-image: url(img/мост.png);
+  background-size: 600px;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  height: 645px;
+
+  
+}
+.about_us_l {
+    top: 161px;
+    position: absolute;
+    width: 30%;
+    float: left;
+    z-index: 2;
+    //right: 3px;
+}
+.about_us_l p{
+font-size: 25px;
+  margin-top: 50px;
+  font-weight: 100;
+      border-radius: 5px;
+                text-align: left;
+}
+.about_us_r  p{
+    font-size: 25px;
+   // margin-top: 50px;
+    font-weight: 100;
+   // padding-right: 25px;
+       color: #777777;
+       text-align: left;
+ 
+}
+.about_us_r {
+      top: 208px;
+    padding-left: 45px;
+//border-radius: 5px;
+top: 72px;
+    width: 70%;
+    position: relative;
+    float: right;
+    //background-color: #f7f7f7;
+    background-color: transparent;
+    height: 520px;
+    text-align: right;
+ /*   -webkit-box-shadow: 0px 0px 20px 1px rgba(102,102,102,0.75);
+    -moz-box-shadow: 0px 0px 20px 1px rgba(102,102,102,0.75);
+    box-shadow: 0px 0px 20px 1px rgba(102,102,102,0.75);*/
+    z-index: 1;
+}
+
+.about_us_r ul {position: relative; width: 95%;float: left;text-align: center;
+    margin: 42px 0px;}
+.about_us_r ul li {
+  display: inline-block;
+  width: 31%;
+  position: relative;
+  margin: 15px 0px;
+}
+.about_us_r ul li img{
+  width: 100px;
+  margin: auto;
+  display: block;
+  }
+  .about_us_r ul li h3{
+    text-align: center;
+    font-weight: 900;
+    color: #666;
+  }
+
+
+
+.about_us h2{
+  position: relative;
+  z-index: 1;
+  font-size: 40px;
+}
+
+.about_us h2:after{content:" ";
+background-color:#ec9d2d;
+width:100px;
+height:5px;
+margin:5px auto 0;
+position:absolute;
+display:block;
+left: : 0;
+    bottom: -25px;
+}
+
+.about_us:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    top: -35px;
+    background: #f6f6f6;
+    z-index: 1;
+    -ms-transform: skewy(3deg);
+    -webkit-transform: skewy(3deg);
+    transform: skewy(3deg);
+}
+
+
                                       /*Преимущества*/
 
 
 .advantage {
   position: relative;
-  background: #ededed;
-  background-image: url(img/мост.png);
-  background-size: 600px;
+  background: #f6f6f6;
+  background-image: url(img/пушкинэ.png);
+  background-size: 670px;
   background-repeat: no-repeat;
-  background-position: 100% 100%;
+  background-position: 0% 100%;
 
   
 }
@@ -383,7 +492,7 @@ left: : 0;
     width: 100%;
     height: 120px;
     top: -35px;
-    background: #ededed;
+    background: #f6f6f6;
     z-index: 1;
     -ms-transform: skewy(3deg);
     -webkit-transform: skewy(3deg);
@@ -397,12 +506,11 @@ left: : 0;
                                       /*Что вы получаете, работая с нами?*/
 .what_get {
   position: relative;
-  background: #f6f6f6;
-  background-image: url(img/horse.png);
+  background: #ededed;
+  //background-image: url(img/horse.png);
   background-size: 400px;
   background-repeat: no-repeat;
   background-position: 0% 100%;
-
   
 }
 
@@ -413,7 +521,7 @@ left: : 0;
     width: 100%;
     height: 120px;
     top: -35px;
-    background: #f6f6f6;
+    background: #ededed;
     z-index: 1;
     -ms-transform: skewy(-3deg);
     -webkit-transform: skewy(-3deg);
@@ -439,7 +547,7 @@ border-radius: 5px;
   width: 70%;
   position: relative;
   float: right;
-  background-color: #f7f7f7;
+  //background-color: #ededed;
   height: 585px;
   //z-index: 100;
   text-align: right;
@@ -518,9 +626,9 @@ position: relative;
     top: -35px;
     background:  #ededed;
     z-index: 0;
-    -ms-transform: skewy(3deg);
-    -webkit-transform: skewy(3deg);
-    transform: skewy(3deg);
+    -ms-transform: skewy(-3deg);
+    -webkit-transform: skewy(-3deg);
+    transform: skewy(-3deg);
 }
 .staff_l {
   top: 100px;
@@ -591,8 +699,8 @@ display: inline-block;
                                       /*Инфорграфика*/
 .infobox {
 position: relative;
-   background:  #f6f6f6;
-  background-image: url(img/пушкинэ.png);
+   background:  #ededed;
+  //background-image: url(img/пушкинэ.png);
   background-size: 500px;
   background-repeat: no-repeat;
   background-position: 100% 100%;
@@ -609,7 +717,7 @@ position: relative;
     width: 100%;
     height: 120px;
     top: -35px;
-    background:  #f6f6f6;
+    background:  #ededed;
     z-index: 0;
     -ms-transform: skewy(-3deg);
     -webkit-transform: skewy(-3deg);
@@ -704,12 +812,12 @@ font-weight: 100;
 
 .what_we_can {
 position: relative;
-   background:  #ededed;
- // background-image: url(img/staff.png);
-  background-size: 350px;
+   background:  #f7f7f7;
+  background-image: url(img/horse.png);
+  background-size: 450px;
   background-repeat: no-repeat;
-  background-position: 10% 100%;
-  height: 670px;
+  background-position: 100% 100%;
+  height: 748px;
 
 }
 
@@ -720,7 +828,7 @@ position: relative;
     width: 100%;
     height: 97px;
     top: -35px;
-    background:  #ededed;
+    background:  #f7f7f7;
     z-index: 0;
     -ms-transform: skewy(3deg);
     -webkit-transform: skewy(3deg);
@@ -815,11 +923,11 @@ z-index: -1;
 
 .price {
 position: relative;
-   background:  #f6f6f6;
+   background:   #f6f6f6;
   background-image: url(img/theater.png);
-  background-size: 450px;
+  background-size: 550px;
   background-repeat: no-repeat;
-  background-position: 0% 80%;
+  background-position: 0% 100%;
   height: 655px;
 
 }
@@ -831,11 +939,11 @@ position: relative;
     width: 100%;
     height: 120px;
     top: -35px;
-    background:  #f6f6f6;
+    background:  #f6f6f6 ;
     z-index: 0;
-    -ms-transform: skewy(-3deg);
-    -webkit-transform: skewy(-3deg);
-    transform: skewy(-3deg);
+    -ms-transform: skewy(3deg);
+    -webkit-transform: skewy(3deg);
+    transform: skewy(3deg);
 }
 
 .price_l {
@@ -876,7 +984,7 @@ border-radius: 5px;
   width: 80%;
   position: relative;
   float: right;
-  background-color: #f7f7f7;
+  //background-color: #f7f7f7;
   height: 470px;
   //z-index: 100;
   text-align: right;
@@ -958,7 +1066,7 @@ font-size: 21px;
 
 .reviews {
 position: relative;
-   background:  #ededed;
+   background: #ededed;
   background-image: url();
   background-size: 350px;
   background-repeat: no-repeat;
@@ -976,9 +1084,9 @@ position: relative;
     top: -35px;
     background:  #ededed;
     z-index: 0;
-    -ms-transform: skewy(3deg);
-    -webkit-transform: skewy(3deg);
-    transform: skewy(3deg);
+    -ms-transform: skewy(-3deg);
+    -webkit-transform: skewy(-3deg);
+    transform: skewy(-3deg);
 }
 
 .reviews_l {
@@ -1048,11 +1156,11 @@ position: relative;
     width: 100%;
     height: 120px;
     top: -35px;
-    background:  #f6f6f6;
+    background: #f6f6f6;
     z-index: 0;
-    -ms-transform: skewy(-3deg);
-    -webkit-transform: skewy(-3deg);
-    transform: skewy(-3deg);
+    -ms-transform: skewy(3deg);
+    -webkit-transform: skewy(3deg);
+    transform: skewy(3deg);
 }
 
 .partners_l {
@@ -1093,7 +1201,7 @@ border-radius: 5px;
   width: 80%;
   position: relative;
   float: right;
-  //background-color: #f7f7f7;
+  //background-color: #ededed;
    background-color: transparent;
   height: 400px;
   //z-index: 100;
@@ -1141,9 +1249,9 @@ position: relative;
     top: -35px;
     background:  #ededed;
     z-index: 0;
-    -ms-transform: skewy(3deg);
-    -webkit-transform: skewy(3deg);
-    transform: skewy(3deg);
+    -ms-transform: skewy(-3deg);
+    -webkit-transform: skewy(-3deg);
+    transform: skewy(-3deg);
 }
 
 .question_l {
@@ -1194,7 +1302,7 @@ height: 300px;
 
 .contacts {
 position: relative;
-   background:  #f6f6f6;
+   background:   #f7f7f7;
   background-image: url(img/afonasiy.png);
   background-size: 350px;
   background-repeat: no-repeat;
@@ -1210,11 +1318,11 @@ position: relative;
     width: 100%;
     height: 120px;
     top: -35px;
-    background:  #f6f6f6;
+    background:   #f7f7f7;
     z-index: 0;
-    -ms-transform: skewy(-3deg);
-    -webkit-transform: skewy(-3deg);
-    transform: skewy(-3deg);
+    -ms-transform: skewy(3deg);
+    -webkit-transform: skewy(3deg);
+    transform: skewy(3deg);
 }
 
 .contacts_l {
@@ -1539,6 +1647,9 @@ button.but_order:hover {
 
 
 /*Навигация на главной*/
+#blfix{
+  //opacity: 0;
+}
   .sticky-header {
   position: fixed;
   top: 30%;
